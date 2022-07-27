@@ -85,12 +85,36 @@ select {
 body {
 	width: 100%;
 	background-color: #1F1C1D;
-	font-family: ;
-}
-/*--------header---------- */
-.widthcontainer {
-	background-color: #181617;
-	width: 100%;
-	min-height: 684px;
+	font-family: Roboto, sans-serif;
+	color: #A07B50;
+	font-size: 16px;
+	line-height: 150%;
 
 }
+/*--------header---------- */
+.page-header {
+
+}
+.header {
+}
+.header__subtitle {
+line-height: 24px;
+
+}
+.header__title {
+	font-family: Yeseva One, sans-serif;
+	color: #fff;
+	font-size: 52px;
+	font-weight: 400;
+	line-height: 60.06px;
+}
+.header__discriptions {
+}
+.header__link {
+	color: #fff;
+}
+.header__image {
+}
+
+/*--------pets---------- */
+
