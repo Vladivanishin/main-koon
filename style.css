@@ -37,7 +37,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
-
+a {
+	text-decoration: none;
+}
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
@@ -83,7 +85,7 @@ select {
 /*выше сброс стилей-------начало проекта */
 
 body {
-	width: 100%;
+	min-width: 1366px;
 	background-color: #1F1C1D;
 	font-family: Roboto, sans-serif;
 	color: #A07B50;
@@ -93,15 +95,25 @@ body {
 }
 /*--------header---------- */
 .page-header {
-
+	background-color: #181617;
 }
 .header {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	border: 1px solid red;
+}
+.header__logo {
+	margin: 31px auto;
+	border: 1px solid green;
 }
 .header__container {
 	min-width: 622px;
 	min-height: 462px;
 	display: flex;
 	flex-direction: column;
+	margin-top: 186px;
+	margin-left: 202px;
 }
 
 .header__subtitle {
@@ -128,6 +140,7 @@ padding-bottom: 18px;
 	max-width: 200px;
 	max-height: 52px;
 	margin-top: 62px;
+	text-decoration: none;
 }
 .header__link:hover {
 	color: rgba(255, 255, 255, 0.1);
@@ -140,12 +153,24 @@ padding-bottom: 18px;
 	margin-top: 62px;
 }
 .header__image {
+
 }
 .header__sociallist {
+
 }
 .sociallist__item {
 }
 .socialitem__link {
+	text-decoration: none;
+	font-size: 0px;
+}
+.socialitem__image {
+
 }
 /*--------pets---------- */
-
+.pets__container {
+	background-color: #1F1C1D;
+	border: 1px solid blue;
+	margin: 0 auto;
+	width: 1024px;
+}
