@@ -210,3 +210,95 @@ padding-bottom: 18px;
 	display: flex;
 	flex-direction: column;
 }
+
+
+
+/* uhod page ------------------------------------*/
+.osob {
+}
+.osob__title {
+}
+.title-top {
+}
+.osob__subtitle {
+	text-align: center;
+	margin-top: 23px;
+}
+.osob__item {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 21px;
+text-align: right;
+
+color: #FFFFFF;
+
+}
+.whywe {
+	border: 1px solid darkcyan;
+	display: flex;
+	flex-direction: column;
+}
+.whywe__list--container {
+	width: 1147px;
+	display: flex;
+	justify-content: space-between;
+	margin:0 auto;
+}
+.whywe__title {
+}
+.whywe__subtitle {
+	margin-bottom: 47px;
+}
+.whywe__list {
+
+}
+.whywe__item {
+	width: 360px;
+	height: 301px;
+	background-color: #1F1C1D;
+	display: flex;
+	flex-direction: column;
+}
+.whywe__item--hover {
+	background-color: #A07B50;
+	width: 320px;
+	height: 267px;
+	margin: 17px 20px;
+	display: flex;
+	flex-direction: column;
+}
+.whywe__item-text {
+	text-align: center;
+	margin-bottom: 41px;
+}
+.whywe__item-textwhite {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 24px;
+}
+.whywe__item--image {
+	margin: auto;
+}
+.whywe__item--image-white {
+	margin: auto;
+}
+
+/*====block whywe====*/
+.whywe {
+	background-color: #151313;
+	height: 618px;
+}
+.whywe__title {
+}
+.whywe__subtitle {
+	text-align: center;
+	margin-top: 23px;
+}
+.whywe__list {
+}
+.whywe__item {
+}
+.whywe__item-text {
+}
