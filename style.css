@@ -474,3 +474,63 @@ padding-bottom: 18px;
 .whywe__item--image-white {
 	margin: auto;
 }
+
+/*------------uhod page---------------*/
+
+.uhod {
+	width: 100%;
+	background-image: url("img/obuhode.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 645px;
+	border: 1px solid fuchsia;
+	display: flex;
+	flex-direction: column;
+}
+.uhod__title {
+	font-family: "Yeseva One", sans-serif;
+	color: #fff;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	margin-top:	83px;
+	text-align: center;
+}
+.uhod__box {
+	width: 559px;
+	height: 165px;
+	border: 1px solid #A07B50;
+}
+.uhod__box__container{
+	width: 1160px;
+	margin: 0 auto;
+	border: 1px solid green;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.box__title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	color: #A07B50;
+	margin-top: 38px;
+	margin-left: 59px;
+}
+.box__subtitle {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 23px;
+	color: #FFFFFF;
+	margin-left: 59px;
+	margin-top: 10px;
+
+}
+.uhod__box--boxright {
+	height: 100%;
+	width: 60px;
+	background-color: #A07B50;
+}
