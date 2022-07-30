@@ -226,30 +226,119 @@ padding-bottom: 18px;
 }
 .osob__item {
 	font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 21px;
-text-align: right;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: right;
+	color: #FFFFFF;
+}
+.osob__item--legko {
+	position: absolute;
+	width: 270px;
+	height: 43px;
+	left: 90px;
+	top: 200px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 153.52%;
+	text-align: right;
+}
+.osob__item--vneshniy {
+	position: absolute;
+	width: 212px;
+	height: 46px;
+	left: 190px;
+	top: 500px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 23px;
+	text-align: right;
 
-color: #FFFFFF;
+	color: #FFFFFF;
+}
+.osob__item--vipol {
+	position: absolute;
+	width: 201px;
+	height: 50px;
+	left: 1000px;
+	top: 270px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 25px;
+
+	color: #FFFFFF;
+}
+.osob__item--vesmozh {
+	position: absolute;
+	width: 168px;
+	height: 46px;
+	left: 950px;
+	top: 500px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 23px;
+	color: #FFFFFF;
 
 }
+.osob__container {
+	width: 100%;
+	height: 808px;
+	border: 1px solid violet;
+	position: relative;
+	margin-top: 69px;
+}
+.osob__blackhole {
+	position: absolute;
+	top: 57px;
+	left: 423px;
+	background-color: #151313;
+	border-radius: 50%;
+	width: 519px;
+	height: 519px;
+	margin: 0 auto;
+	z-index: 1;
+}
+.osob__blackhole--border {
+
+	border-radius: 50%;
+	width: 631px;
+	height: 631px;
+	margin: 0 auto;
+	border: 1px solid #A07B50;
+}
+.osob__imagecat {
+	margin: -770px auto;
+	z-index: 3;
+}
+/*-------------------block why we--------------------*/
 .whywe {
-	border: 1px solid darkcyan;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	background-color: #151313;
+	height: 618px;
 }
 .whywe__list--container {
 	width: 1147px;
 	display: flex;
 	justify-content: space-between;
-	margin:0 auto;
+	margin: 0 auto;
 }
 .whywe__title {
 }
 .whywe__subtitle {
 	margin-bottom: 47px;
+	text-align: center;
+	margin-top: 23px;
 }
 .whywe__list {
 
@@ -283,22 +372,4 @@ color: #FFFFFF;
 }
 .whywe__item--image-white {
 	margin: auto;
-}
-
-/*====block whywe====*/
-.whywe {
-	background-color: #151313;
-	height: 618px;
-}
-.whywe__title {
-}
-.whywe__subtitle {
-	text-align: center;
-	margin-top: 23px;
-}
-.whywe__list {
-}
-.whywe__item {
-}
-.whywe__item-text {
 }
