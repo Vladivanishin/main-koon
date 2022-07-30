@@ -569,3 +569,88 @@ padding-bottom: 18px;
 	width: 16px;
 	height: 16px;
 }
+
+/*========================plock our team======================*/
+
+.ourteam {
+	width: 100%;
+	background-color: #151313;
+	height: 694px;
+	border: 1px solid green;
+}
+.ourteam__title {
+
+}
+.ourteam__subtitle {
+	margin-bottom: 22px;
+	text-align: center;
+	margin-top: 23px;
+}
+.ourteam__card {
+	border: 1px solid red;
+	max-width: 994px;
+	height: 402px;
+	margin: 0 auto;
+}
+.card__borderbox {
+	width: 660px;
+	height: 402px;
+	border: 1px solid rgba(160, 123, 80, 0.43);
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.card__boxinbox {
+	height: 356px;
+	width: 600px;
+	background-color: #1F1C1D;
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.card__boxmini {
+	width: 401px;
+	height: 214px;
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid violet;
+}
+.card__name {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #A07B50;
+
+}
+.card__title {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+margin-top: 5px;
+color: #A07B50;
+}
+.card__description {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 25px;
+margin-top: 20px;
+color: rgba(255, 255, 255, 0.72);
+}
+.card__list {
+	display: flex;
+	align-items: flex-end;
+}
+.card__item {
+}
+.card__link {
+}
