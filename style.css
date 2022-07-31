@@ -576,7 +576,7 @@ padding-bottom: 18px;
 	width: 100%;
 	background-color: #151313;
 	height: 694px;
-	border: 1px solid green;
+	border: 1px solid rgba(0, 128, 0, 0);
 }
 .ourteam__title {
 
@@ -587,19 +587,32 @@ padding-bottom: 18px;
 	margin-top: 23px;
 }
 .ourteam__card {
-	border: 1px solid red;
 	max-width: 994px;
 	height: 402px;
 	margin: 0 auto;
+	position: relative;
+	display: flex;
+	margin: 0 auto;
+}
+.ourteam__photo {
+	max-width: 360px;
+	max-height: 356px;
+	position: absolute;
+	left: 30px;
+	z-index: 3;
+
+
 }
 .card__borderbox {
 	width: 660px;
 	height: 402px;
 	border: 1px solid rgba(160, 123, 80, 0.43);
-	float: right;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	position: absolute;
+	right: 0;
+	z-index: 1;
 }
 .card__boxinbox {
 	height: 356px;
@@ -609,6 +622,7 @@ padding-bottom: 18px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	z-index: 2;
 }
 .card__boxmini {
 	width: 401px;
@@ -616,41 +630,53 @@ padding-bottom: 18px;
 	margin:0 auto;
 	display: flex;
 	flex-direction: column;
-	border: 1px solid violet;
+	position: relative;
 }
 .card__name {
 	font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-
-color: #A07B50;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	color: #A07B50;
 
 }
 .card__title {
 	font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-margin-top: 5px;
-color: #A07B50;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 5px;
+	color: #A07B50;
 }
 .card__description {
 	font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 25px;
-margin-top: 20px;
-color: rgba(255, 255, 255, 0.72);
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 25px;
+	margin-top: 20px;
+	color: rgba(255, 255, 255, 0.72);
 }
 .card__list {
 	display: flex;
 	align-items: flex-end;
+	position: absolute;
+	bottom: 0;
 }
-.card__item {
+.card__item:not(:last-child) {
+	margin-right: 10px;
 }
 .card__link {
+	font-size: 0px;
+}
+.card__link--fb {
+
+}
+.card__link--tw {
+	
+}
+.card__link--vk {
+	
 }
