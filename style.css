@@ -177,8 +177,11 @@ padding-bottom: 18px;
 	height: 150px;
 	grid-column: span 1;
 	position: absolute;
-	top: 570px;
-	left: 95px;
+	top: 580px;
+	left: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .header__social--line {
 	width: 1px;
@@ -189,6 +192,7 @@ padding-bottom: 18px;
 	top: 470px;
 }
 .sociallist__item {
+	margin: 0 auto;
 }
 .socialitem__link {
 	text-decoration: none;
@@ -825,7 +829,6 @@ padding-bottom: 18px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 }
 .review__minibox {
 	width: 408px;
@@ -865,6 +868,9 @@ align-self: center;
 .littlebox__link {
 	font-size: 0;
 	borde: 1px solid rgba(160, 123, 80, 0.27);
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
 }
 .littlebox__spanbox {
 }
@@ -879,6 +885,9 @@ height: 28px;
 border: 1px solid rgba(160, 123, 80, 0.27);
 margin-right: 15px;
 display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .littlebox__list {
 	display: flex;
@@ -901,19 +910,22 @@ display: flex;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid forestgreen;
 	align-items: center;
 }
 .footer__logo {
 	font-size: 0;
 }
 .footer__list {
-	display: flex
+	display: flex;
+	align-items: center;
 }
 .footer__item {
 	margin-right: 10px;
 }
 .footer__link {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
 	font-size: 0;
 }
 .footer__adress {
@@ -933,8 +945,5 @@ display: flex;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 27px;
-	/* identical to box height */
-	
-	
 	color: #FDF2E6;
 }
