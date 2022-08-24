@@ -1,0 +1,65 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	background-color: #181617;
+	color: #A07B50;
+	font-family: Roboto, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+ul {
+	list-style: none;
+}
+.visually-hidden {
+	font-size: 0;
+}
+a {
+	text-decoration: none;
+}
+.text-main {
+	color: #A07B50;
+	text-align: center;
+}
+.title-header {
+	color: #fff;
+	font-family: 'Yeseva One', sans-serif;
+	font-size: 36px;
+	text-align: center;
+	font-weight: 300;
+	line-height: 42px;
+}
+/*---------------header----------------*/
+
+.start-page {
+}
+.start-page__logo-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	padding-top: 10px;
+}
+.start-page__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 235px;
+	margin: 0 auto;
+	margin-top: 57px;
+}
+.text-main {
+}
+.title-header {
+}
+.btn {
+}
+.start-page__cat-image {
+}
+.main-koon-img {
+}
