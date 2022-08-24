@@ -1,48 +1,162 @@
-html,
-body {
-	margin: 0;
-	padding: 0;
-	border: 0;
+/*-----------сброс стиле------------ */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
 body {
-	background-color: #181617;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+a {
+   text-decoration: none;
+}
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+/*выше сброс стилей-------начало проекта */
+
+
+body {
+	background-color: #1F1C1D;
 	color: #A07B50;
 	font-family: Roboto, sans-serif;
-}
-img {
-	max-width: 100%;
-}
-ul {
-	list-style: none;
 }
 .visually-hidden {
 	font-size: 0;
 }
-a {
-	text-decoration: none;
-}
 .text-main {
 	color: #A07B50;
 	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 0.875rem;
 }
 .title-header {
 	color: #fff;
 	font-family: 'Yeseva One', sans-serif;
-	font-size: 36px;
+	font-size: 2.25rem;
 	text-align: center;
 	font-weight: 300;
 	line-height: 42px;
+	margin: 0;
+	padding: 0;
+}
+.text-white {
+	font-size: 0.875rem;
+	color: #fff;
+	font-weight: 300;
+	line-height: 140%;
+}
+.btn {
+	font-size: 0.75rem;
+	font-weight: 700;
+	color: #fff;
+	padding: 15px 18px 16px 18px;
+	border: 0.5px solid #A07B50;
+}
+.title {
+	color: #fff;
+	font-size: 1.75rem;
+	font-family: 'Yeseva One', sans-serif;
+	font-weight: 400;
+	padding-top: 60px;
+	line-height: 32px;
 }
 /*---------------header----------------*/
-
-.start-page {
+.header {
+	background-color: #181617;
+	margin: 0;
+	padding: 0;
 }
-.start-page__logo-box {
+.header__logo-box {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100vw;
-	padding-top: 10px;
+	padding-top: 27px;
+	padding-bottom: 57px;
+}
+/*---------------main----------------*/
+.start-page__sity-text {
+	padding-bottom: 20px;
+}
+.start-page__main-text {
+	padding-bottom: 30px;
+}
+.start-page__main-subtitle {
+	padding-bottom: 40px;
+}
+.start-page {
+	background-color: #181617;
 }
 .start-page__content {
 	display: flex;
@@ -51,15 +165,149 @@ a {
 	align-items: center;
 	max-width: 235px;
 	margin: 0 auto;
-	margin-top: 57px;
+}
+.main-koon-img {
+	width: 100vw;
+	margin-top: 20px;
+}
+
+/* /-----------------pets----------------/ */
+
+.pets {
+}
+.pets__subtitle {
+	line-height: 19.5px;
+	font-weight: 300;
+	padding: 35px 19px 40px 19px;
+	text-align: center;
+	line-height: 140%;
+	margin: 0 auto;
+	font-size: 0.875rem;
+}
+.pets__contentbox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.title {
 }
 .text-main {
 }
-.title-header {
+.pets__list {
+	display: flex;
+	justify-content: space-between;
+	gap: 45px;
+	margin: 0 auto;
+}
+.pets__link {
+	color: rgba(255, 255, 255, 0.2);
+	font-size: 16px;
+	font-weight: 500;
+}
+.pets__link-active {
+	color: #fff;
+}
+.pets__images {
+	padding-left: 43px;
+	padding-right: 43px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* .pets__images::before {
+	content: '';
+	position: absolute;
+	background-image: url('img/icon_left.png');
+	background-repeat: no-repeat;
+	position: 0 0;
+	left: 0;
+	top: 0;
+	z-index: 2;
+
+}
+.pets__images::after {
+	content: '';
+	position: absolute;
+	background-image: url('img/icon_left.png');
+	background-repeat: no-repeat;
+	position: rotate(180deg);
+
+} */
+.pets__images__img {
+	width: 100%;
+	padding-bottom: 45px;
 }
 .btn {
 }
-.start-page__cat-image {
+
+/* ---------------features---------------- */
+
+.features {
 }
-.main-koon-img {
+.title {
+}
+.features__title {
+	padding-left: 65px;
+	padding-right: 65px;
+	text-align: center;
+}
+.text-main {
+}
+.features__subtitle {
+	font-weight: 300;
+	padding: 35px 24px 30px 24px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.features__circle-border {
+	border: 0.5px solid #A07B50;
+	width: 280px;
+	height: 280px;
+	border-radius: 100%;
+	margin: 0 auto;
+	z-index: 1;
+	position: relative;
+}
+.festures__circle-black {
+	background-color: #151313;
+	border-radius: 100%;
+	margin: 0 auto;
+	height: 230px;
+	width: 230px;
+	z-index: 2;
+	top: 25px;
+	left: 25px;
+	position: absolute;
+}
+.features__cat {
+	position: absolute;
+	top: -30px;
+}
+.features__listbox {
+}
+.features__list {
+}
+.text-white {
+}
+.features__text-white {
+	padding-bottom: 30px;
+	padding-left: 33px;
+	padding-right: 33px;
+}
+.features__text-white:first-child {
+	padding-top: 40px;
+}
+.features__text-white::before {
+	content: '';
+	background-color: #A07B50;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 10px;
+	height: 10px;
+
 }

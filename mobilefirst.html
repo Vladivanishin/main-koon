@@ -20,67 +20,76 @@
     />
   </head>
   <body>
-    <header>
-      <img />
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="img/crownlogo.svg" alt="logotype" />
+      </div>
     </header>
+
     <main>
       <section class="start-page">
-        <div class="start-page__logo-box">
-          <img src="img/crownlogo.svg" alt="logotype" />
-        </div>
         <div class="start-page__content">
-          <span class="text-main">Новосибирск</span>
-          <h1 class="title-header">Питомник Мейн-Кунов</h1>
-          <p class="text-main">
-            Первый питомник&nbsp;с&nbsp;расширенным спектром услуг
+          <span class="text-main start-page__sity-text">Новосибирск</span>
+          <h1 class="title-header start-page__main-text">
+            Питомник Мейн-Кунов
+          </h1>
+          <p class="text-main start-page__main-subtitle">
+            Первый&nbsp;питомник&nbsp;с&nbsp;расширенным спектром услуг
           </p>
-          <a class="btn" href="#">Смотреть котиков</a>
-          <div class="start-page__cat-image"></div>
-          <div class="main-koon-img"></div>
+          <a class="btn start-page__link" href="#">Смотреть котиков</a>
+          <div class="main-koon-img">
+            <img
+              class="main-koon-img__img"
+              src="img/catmain.png"
+              alt="main koon"
+            />
+          </div>
         </div>
       </section>
 
       <section class="pets">
         <div class="pets__contentbox">
           <h2 class="title">Питомцы</h2>
-          <p class="text-main">
-            Все представители нашего питомника имеют ветеринарный паспорт с
-            отметками о прививках и документ с родословной
+          <p class="text-main pets__subtitle">
+            Все&nbsp;представители&nbsp;нашего&nbsp;питомника имеют ветеринарный
+            паспорт с&nbsp;отметками о&nbsp;прививках и документ с родословной
           </p>
           <ul class="pets__list">
-            <li><a class="pets__link" href="">Коты</a></li>
-            <li><a class="pets__link" href="">Кошки</a></li>
-            <li><a class="pets__link" href="">Котята</a></li>
+            <li><a class="pets__link pets__link-active" href="#">Коты</a></li>
+            <li><a class="pets__link" href="#">Кошки</a></li>
+            <li><a class="pets__link" href="#">Котята</a></li>
           </ul>
         </div>
         <div class="pets__images">
-          <img src="img/catgray.png" alt="gray cat" />
-          <a class="btn" href="#">Смотреть больше</a>
+          <img class="pets__images__img" src="img/catgray.png" alt="gray cat" />
+          <a class="btn pets__btn" href="#">Смотреть больше</a>
         </div>
       </section>
 
       <section class="features">
-        <h2 class="title">Особенности породы</h2>
-        <p class="text-main">
+        <h2 class="title features__title">Особенности породы</h2>
+        <p class="text-main features__subtitle">
           Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в
           свой дом этого питомца, вы получите умное животное, которому нет
           равных
         </p>
         <div class="features__circle-border">
           <div class="festures__circle-black">
-            <img src="" alt="" />
+            <img class="features__cat" src="img/catstand.png" alt="cat" />
           </div>
         </div>
         <div class="features__listbox">
           <ul class="features__list">
-            <li class="text-white">
+            <li class="text-white features__text-white">
               Легко уживается в семьях с детьми или другими животными
             </li>
-            <li class="text-white">
+            <li class="text-white features__text-white">
               Выполняет команды как дрессированная собака
             </li>
-            <li class="text-white">Вес может достигать 12 кг, а длина 1 м</li>
-            <li class="text-white">
+            <li class="text-white features__text-white">
+              Вес может достигать 12 кг, а длина 1 м
+            </li>
+            <li class="text-white features__text-white">
               Внешний вид этой кошки похож на дикую рысь
             </li>
           </ul>
@@ -264,7 +273,7 @@
 
       <footer class="footer">
         <span class="text-footer">Новосибирск, Пушкинский проспект, 19</span>
-        <span class="text-footer">+7 (383) 900-64-65</span>
+        <a class="text-footer" href="tel:73839006465">+7 (383) 900-64-65</a>
         <ul>
           <li><a class="visually-hidden" href="#">facebook</a></li>
           <li><a class="visually-hidden" href="#">twitter</a></li>
