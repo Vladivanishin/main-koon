@@ -130,6 +130,9 @@ body {
 	padding: 15px 18px 16px 18px;
 	border: 0.5px solid #A07B50;
 }
+.btn:hover {
+	color: rgba(255, 255, 255, 0.3);
+}
 .title {
 	color: #fff;
 	font-size: 1.75rem;
@@ -173,6 +176,7 @@ body {
 	max-width: 235px;
 	margin: 0 auto;
 }
+
 .main-koon-img {
 	width: 100vw;
 	margin-top: 20px;
@@ -214,8 +218,11 @@ body {
 	font-size: 16px;
 	font-weight: 500;
 }
-.pets__link-active {
-	color: #fff;
+.pets__link:hover {
+	color: rgb(255, 255, 255);
+}
+.pets__link:active {
+	color: rgb(255, 255, 255);
 }
 .pets__images {
 	padding-left: 43px;
@@ -248,6 +255,13 @@ body {
 .pets__images--img {
 	width: 100%;
 	padding-bottom: 45px;
+	max-width: 474px;
+}
+.pets__images--img2 {
+display: none;
+}
+.pets__images--img3 {
+display: none;
 }
 .btn {
 }
@@ -255,6 +269,8 @@ body {
 /* ---------------features---------------- */
 
 .features {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .title {
 }
@@ -294,15 +310,17 @@ body {
 	top: -30px;
 }
 .features__listbox {
+	margin: 0 auto;
 }
 .features__list {
+	
 }
 .text-white {
 }
 .features__text-white {
 	padding-bottom: 30px;
 	padding-left: 33px;
-	padding-right: 33px;
+	padding-right: 1px;
 	font-weight: 300;
 }
 .features__text-white:first-child {
