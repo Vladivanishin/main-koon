@@ -245,7 +245,7 @@ body {
 	position: rotate(180deg);
 
 } */
-.pets__images__img {
+.pets__images--img {
 	width: 100%;
 	padding-bottom: 45px;
 }
@@ -468,7 +468,7 @@ body {
 }
 .our__subtitle {
 	font-weight: 300;
-	padding: 35px 34px 40px 34px;
+	padding: 35px 15px 40px 15px;
 	margin: 0 auto;
 	font-size: 14px;
 	text-align: center;
