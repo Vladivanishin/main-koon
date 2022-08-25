@@ -84,7 +84,9 @@ select {
 
 /*выше сброс стилей-------начало проекта */
 
-
+li {
+	list-style: none;
+}
 body {
 	background-color: #1F1C1D;
 	color: #A07B50;
@@ -115,6 +117,11 @@ body {
 	color: #fff;
 	font-weight: 300;
 	line-height: 140%;
+}
+.text-white-medium {
+	font-size: 14px;
+	font-weight: 500;
+	color: #DDD0C3;
 }
 .btn {
 	font-size: 0.75rem;
@@ -256,8 +263,6 @@ body {
 	padding-right: 65px;
 	text-align: center;
 }
-.text-main {
-}
 .features__subtitle {
 	font-weight: 300;
 	padding: 35px 24px 30px 24px;
@@ -298,9 +303,13 @@ body {
 	padding-bottom: 30px;
 	padding-left: 33px;
 	padding-right: 33px;
+	font-weight: 300;
 }
 .features__text-white:first-child {
-	padding-top: 40px;
+	margin-top: 40px;
+}
+.features__text-white:last-child {
+	padding-bottom: 60px;
 }
 .features__text-white::before {
 	content: '';
@@ -310,4 +319,359 @@ body {
 	width: 10px;
 	height: 10px;
 
+}
+.features__list--dot {
+	position: relative;
+}
+.features__list--dot::before {
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #A07B50;
+	left: 10px;
+	top: 5px;
+}
+
+/* ----------whywe-------- */
+
+.whywe {
+	background-color: #181617;
+}
+.whywe__title {
+	padding-left: 65px;
+	padding-right: 65px;
+	text-align: center;
+}
+.whywe__subtitle {
+	font-weight: 300;
+	padding: 35px 18px 30px 18px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.title {
+}
+.text-main {
+}
+.whywe__listbox {
+	padding: 0 15px 60px 15px;
+	margin: 0 auto;
+	
+}
+.whywe__list {
+
+}
+.whywe__item {
+	width: 290px;
+	height: 248px;
+	background-color: #1F1C1D;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.text-white {
+}
+.whywe__text-in-box {
+	text-align: center;
+	padding-left: 43px;
+	padding-right: 43px;
+	padding-top: 20px;
+}
+.whywe__hover-box {
+	background-color: #A07B50;
+	width: 260px;
+	height: 218px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+.whywe__text-in-hoverbox {
+	text-align: center;
+	padding-left: 43px;
+	padding-right: 43px;
+	padding-top: 20px;
+}
+
+
+/* -------------about------------ */
+
+.about__title {
+	padding-left: 46px;
+	padding-right: 46px;
+	text-align: center;
+}
+.about-leaving {
+	background-image: url('img/obuhode.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-bottom: 60px;
+}
+.about-leaving__listbox {
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.about-leaving__contentbox {
+	border: 0.5px solid #A07B50;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: relative;
+	padding: 25px 50px 25px 25px;
+	max-width: 558px;
+	margin: 0 auto;
+}
+.about-leaving__contentbox:first-child {
+	margin-top: 40px;
+}
+.contentbox__rightbox {
+	background-color: #A07B50;
+	height: 100%;
+	width: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.about-leaving__title-text {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 21px;
+}
+.about-card__text {
+	padding-top: 18px;
+}
+.text-white {
+}
+
+/* --------------------our team ------------------- */
+.our-team {
+	background-color: #181617;
+	padding-bottom: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.our__title {
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+}
+.our__subtitle {
+	font-weight: 300;
+	padding: 35px 34px 40px 34px;
+	margin: 0 auto;
+	font-size: 14px;
+	text-align: center;
+}
+.our-team__cardbox {
+	background-color: #1F1C1D;
+	max-width: 600px;
+	max-height: 356px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 60px 10px 20px 10px;
+	margin-top: 63px;
+	position: relative;
+
+}
+.our-team__title-text {
+	font-size: 18px;
+	font-weight: 500;
+	padding-bottom: 8px;
+}
+.text-white--opa {
+	color: rgba(255, 255, 255, 0.72);
+	padding-top: 25px;
+}
+.text-regular {
+}
+.text-white {
+}
+.our-team__list {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 15px;
+	padding: 40px 10px 10px 10px;
+}
+.our-team__item {
+}
+.visually-hidden {
+}
+.card__photo {
+position: absolute;
+width: 126px;
+height: 126px;
+top: -80px;
+}
+.card__photo::before {
+	content: '';
+	background-image: url(img/icon_left.png);
+	width: 8px;
+	height: 16px;
+}
+
+
+
+/* ---------------questions------------------ */
+
+.question__title {
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+}
+.question__subtitle {
+	font-weight: 300;
+	padding: 35px 34px 40px 34px;
+	margin: 0 auto;
+	font-size: 14px;
+	text-align: center;
+}
+.questions {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.questions__card {
+	border: 0.5px solid #A07B50;
+	padding: 15px 50px 15px 15px;
+ position: relative;
+}
+.questions__card:not(:first-child) {
+	margin-bottom: 30px;
+}
+.text-white-medium--light {
+	font-size: 14px;
+	color: #DDD0C3;
+	font-weight: 300;
+}
+.text-white-medium--light:first-child {
+	padding-bottom: 10px;
+}
+.question__card__right-box {
+	border-left: 0.5px solid #A07B50;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 43px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.question__card__right-box--bg {
+	background-color:  #A07B50;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 43px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ----------------reviews----------------- */
+
+.reviews {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 60px;
+}
+.reviews-title {
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+	padding-bottom: 130px;
+}
+.reviews__contentbox {
+	background-color: #181617;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 118px 30px 40px 30px;
+	margin-top: 143px;
+	position: relative;
+	margin: 0 auto;
+}
+.reviews-social-box {
+	display: flex;
+	justify-content: space-between;
+	max-width: 178px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.social-box__list {
+display: flex;
+column-gap: 15px;
+}
+.social-box__item {
+border: 0.5px solid #A07B50;
+min-width: 28px;
+min-height: 28px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.reviews__textbox {
+}
+.reviews__text {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+}
+.textbox__image {
+	width: 242px;
+	height: 166px;
+	position: absolute;
+	top: -70px;
+}
+.text-white {
+}
+.text-main {
+}
+.visually-hidden {
+}
+
+
+
+/* ---------------footer--------------- */
+
+.footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.text-footer {
+}
+.footer-list {
+	display: flex;
+	column-gap: 20px;
+}
+.footer-tel {
+	padding-top: 20px;
+}
+.footer-item {
+}
+.visually-hidden {
+}
+.header__logo-box {
 }
