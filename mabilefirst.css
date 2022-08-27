@@ -284,6 +284,7 @@ display: none;
 	padding: 35px 24px 30px 24px;
 	margin: 0 auto;
 	font-size: 14px;
+	max-width: 443px;
 }
 .features__circle-border {
 	border: 0.5px solid #A07B50;
@@ -311,9 +312,6 @@ display: none;
 }
 .features__listbox {
 	margin: 0 auto;
-}
-.features__list {
-	
 }
 .text-white {
 }
@@ -491,6 +489,8 @@ display: none;
 	font-size: 14px;
 	text-align: center;
 }
+.card__border-box {
+}
 .our-team__cardbox {
 	background-color: #1F1C1D;
 	max-width: 600px;
@@ -545,7 +545,10 @@ top: -80px;
 
 
 /* ---------------questions------------------ */
-
+.questions__wrapper {
+	max-width: 909px;
+	margin: 0 auto;
+}
 .question__title {
 	padding-left: 40px;
 	padding-right: 40px;
@@ -567,8 +570,14 @@ top: -80px;
 	padding: 15px 50px 15px 15px;
  position: relative;
 }
+.questions__card:nth-child(2) {
+	border-top: none;
+}
 .questions__card:not(:first-child) {
 	margin-bottom: 30px;
+}
+.card__number {
+	display: none;
 }
 .text-white-medium--light {
 	font-size: 14px;
@@ -627,6 +636,7 @@ top: -80px;
 	margin-top: 143px;
 	position: relative;
 	margin: 0 auto;
+	max-width: 290px;
 }
 .reviews-social-box {
 	display: flex;
@@ -659,6 +669,7 @@ justify-content: center;
 	height: 166px;
 	position: absolute;
 	top: -70px;
+	left: 25px;
 }
 .text-white {
 }
@@ -692,4 +703,11 @@ text-align: center;
 .visually-hidden {
 }
 .header__logo-box {
+}
+
+
+
+
+.start-page-socials {
+	display: none;
 }

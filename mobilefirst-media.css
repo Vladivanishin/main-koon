@@ -1,4 +1,7 @@
 @media (min-width: 768px){
+	.start-page-socials {
+		display:flex
+	}
 	.start-page__main-text {
 		margin-top: 20px;
 	}
@@ -23,6 +26,16 @@
 		font-size: 1rem;
 		max-width: 520px;
 		line-height: 26px;
+		padding-bottom: 0;
+	}
+	.text-white {
+		font-size: 1rem;
+	}
+	.text-white-medium {
+		font-size: 1rem;
+	}
+	.text-white-medium--light {
+		font-size: 1rem;
 	}
 	.start-page {
 		position: relative;
@@ -81,8 +94,8 @@
 	.features__cat {
 		top: -40px;
 	}
-	.features__list {
-		position: relative;
+	.features__subtitle {
+
 	}
 	.features__list--dot::before {
 		display: none;
@@ -90,37 +103,37 @@
 	.ft1 {
 		position: absolute;
 		top: 52px;
-		left: -160px;
+		left: -50px;
 		z-index: 3;
-		width: 170px;
+		max-width: 200px;
 		text-align: right;
 	}
 	.ft2 {
 		position: absolute;
-		top: 170px;
-		left: 393px;
+		top: 171px;
+		left: 540px;
 		z-index: 3;
-		width: 160px;
+		width: 180px;
 		text-align: left;
 	}
 	.ft3 {
 		position: absolute;
 		top: 312px;
-		left: 366px;
+		left: 507px;
 		z-index: 3;
-		width: 140px;
+		max-width: 200px;
 		text-align: left;
 	}
 	.ft4 {
 		position: absolute;
 		top: 260px;
-		left: -162px;
+		left: -36px;
 		z-index: 3;
-		width: 160px;
+		width: 175px;
 		text-align: right;
 	}
 	.features__listbox {
-		position: relative;
+		
 	}
 	.dot1 {
 		background-color: #A07B50;
@@ -187,12 +200,134 @@
 
 
 
-
+	.our-team {
+		padding-bottom: 170px;
+	}
 	.our__subtitle {
 		max-width: 510px;
 		line-height: 25px;
 	}
 	.our-team__cardbox {
-		margin-top: 0;
+		margin: 0;
+		align-items: flex-start;
+		text-align: start;
+		padding-left: 90px;
+		padding-right: 95px;
+		padding-bottom: 75px;
+	}
+	.our-team__item {
+		padding-top: 45px;
+	}
+	.our-team__title-text {
+ 	font-size: 1.5rem;
+}
+	.card__border-box {
+		border: 0.5px solid #A07B50;
+		padding: 24px;
+		width: 650px;
+		margin: 0 auto;
+	}
+	.card__photo {
+		top: 250px;
+		right: 40px;
+		width: 208px;
+		height: 208px;
+	}
+
+
+
+
+
+	.reviews {
+		padding-bottom: 85px;
+	}
+	.questions__wrapper {
+		max-width: 655px;
+	}
+	.questions__card {
+		margin-left: 150px;
+		padding: 32px 142px 32px 30px;
+		position: reletive;
+	}
+	.question__card__right-box {
+		width: 72px;
+	}
+	.question__card__right-box--bg {
+		width: 72px;
+	}
+	.text-white-medium {
+		font-size: 1rem;
+	}
+	.card__number {
+		display: block;
+		position: absolute;
+		font-size: 3.125rem;
+		font-weight: 700;
+		left: -75px;
+		top: 15px;
+
+	}
+
+
+
+
+
+	.reviews__text {
+		font-size: 1.5rem;
+	}
+	.text-white--opa {
+		max-width: 407px;
+	}
+	.reviews-sergey-photo {
+		width: 302px;
+		height: 208px;
+		top: -98px;
+		left: 132px;
+	}
+	.reviews__contentbox {
+		padding-top: 148px;
+		max-width: 578px;
+	}
+	.reviews-title {
+		padding-top: 70px;
+	}
+
+
+
+	.features__wrapper {
+		position: relative;
+		 max-width: 700px;
+		 margin: 0 auto;
+	}
+
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+		background-color: #151313;
+		height: 105px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.logo__footer {
+		display: none;
+	}
+	.footer-list {
+		order: 1;
+	}
+	.footer__sity {
+		order: 2;
+	}
+	.footer-tel {
+		order: 3;
+		padding-top: 0;
+	}
+	.footer-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }
