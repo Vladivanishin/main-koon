@@ -167,7 +167,7 @@ body {
 }
 .start-page {
 	background-color: #181617;
-	min-height: 518px;
+	height: 617px;
 	position: relative;
 }
 .start-page__content {
@@ -185,6 +185,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	z-index: 10;
 
 }
 

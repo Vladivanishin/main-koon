@@ -48,8 +48,12 @@
 	.start-page__content {
 		margin: 0 0 0 41px;
 	}
+	.start-page__main-subtitle {
+		text-align: start;
+	}
 	.main-koon-img__img {
 		display: none;
+		left: 100px;
 	}
 	.title {
 		padding-top: 100px;
