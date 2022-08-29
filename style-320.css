@@ -378,7 +378,7 @@ display: none;
 .text-main {
 }
 .whywe__listbox {
-	padding: 0 15px 60px 15px;
+	padding: 0 15px 30px 15px;
 	margin: 0 auto;
 	
 }
@@ -534,13 +534,19 @@ display: none;
 }
 .our-team__item {
 }
-.visually-hidden {
+.team-wrapper {
+	position: relative; 
+	max-width: 290px;
+	margin: 0 auto;
 }
+
 .card__photo {
 position: absolute;
 width: 126px;
 height: 126px;
 top: -80px;
+left: 85px;
+z-index: 3;
 }
 .card__photo::before {
 	content: '';
@@ -690,26 +696,30 @@ justify-content: center;
 /* ---------------footer--------------- */
 
 .footer {
+	background-color: #151313;
+min-height: 211px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
+padding-top: 40px;
+padding-bottom: 0px;
 }
-.text-footer {
+.footer__logo {
+	padding-bottom: 0px;
 }
 .footer-list {
 	display: flex;
+	justify-content: center;
 	column-gap: 20px;
 }
 .footer-tel {
 	padding-top: 20px;
 }
-.footer-item {
-}
-.visually-hidden {
-}
-.header__logo-box {
+.footer-wrapper {
+	display: flex;
+	flex-direction: column;
 }
 
 

@@ -57,7 +57,7 @@
 }
 .images-wrapper {
 	display: grid;
-	grid-template-columns: 1fr 20px 1fr;
+	grid-template-columns: 1fr 30px 1fr;
 	grid-template-rows: 1fr 20px 1fr;
 	grid-template-areas:
 	'white-cat . gray-cat'
@@ -65,17 +65,22 @@
 	'brown-cat . gray-cat';
 	width: 1022px;
 	height: 485px;
-	border: 1px solid red;
 	margin-bottom: 55px;
 }
  .pets__images--img {
 	grid-area: gray-cat;
  }
  .pets__images--img2 {
+	position: relative;
+	top: 0;
+	left: 0;
 	grid-area: brown-cat;
  }
  .pets__images--img3 {
 	grid-area: white-cat;
+	position: relative;
+	top: 0;
+	left: 0;
  }
 .whywe__listbox {
 	display: flex;
@@ -156,6 +161,7 @@
 }
 .reviews-title {
 	padding-top: 80px;
+	padding-bottom: 65px;
 }
 .reviews__contentbox {
 	max-width: 640px;
@@ -199,10 +205,22 @@
 }
 .footer-wrapper {
 	margin: 0 auto;
-	max-width: 1020px;
+	width: 1020px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	column-gap: 125px;
+}
+.logo__footer {
+	width: 50px;
+
+}
+.footer-list {
+
+}
+.footer {
+	height: 156px;
+	padding-top: 0;
 }
 }
